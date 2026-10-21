@@ -1,0 +1,19 @@
+{
+ "created": "2026-10-21",
+ "note": "既存の違反の指紋。段 2 で減らす。増やす変更はユーザーの承認が要る(docs/security-gate-design.md §3.6)",
+ "count": 2,
+ "findings": [
+  {
+   "rule": "xss.sink",
+   "path": "scaj2026/index.html",
+   "fp": "7aa7aa72b73acc0497644389",
+   "hint": "innerHTML に動的な値。textContent か、escape した上で入れる"
+  },
+  {
+   "rule": "xss.sink",
+   "path": "scaj2026/index.html",
+   "fp": "f4876eccddadfbf1a90a5d9c",
+   "hint": "innerHTML に動的な値。textContent か、escape した上で入れる"
+  }
+ ]
+}
